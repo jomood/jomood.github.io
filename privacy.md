@@ -3,6 +3,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
+
 # Privacy Policy
 
 **Last Updated: February 21, 2026**
@@ -113,58 +114,3 @@ We may update this policy. Material changes will be reflected by updating the "L
 
 Email: **jomood.app@gmail.com**
 
-## Appendix A: Flutter Dependency Privacy Coverage (Direct Dependencies)
-
-This appendix maps each direct Flutter dependency in `pubspec.yaml` to privacy impact.
-
-| Library | Role | Privacy/Data Impact |
-|---|---|---|
-| `flutter` | Framework | No independent data collection by itself |
-| `flutter_localizations` | Localization framework | No independent data collection |
-| `flutter_riverpod` | State management | No independent data collection |
-| `go_router` | Navigation | No independent data collection |
-| `flutter_svg` | SVG rendering | No independent data collection |
-| `isar_community` | Local database | Stores local app data on device |
-| `isar_community_flutter_libs` | Isar platform binaries | Local database support only |
-| `path` | File path utilities | No independent data collection |
-| `path_provider` | Access app directories | Local file path access on device |
-| `intl` | Internationalization/date formatting | No independent data collection |
-| `flutter_markdown_plus` | Markdown rendering | No independent data collection |
-| `image_picker` | Camera/gallery picker | Accesses camera/photo library when used |
-| `image_picker_android` | Android implementation for image picker | Same as above (Android bridge) |
-| `image_picker_platform_interface` | Interface package | No independent data collection |
-| `geolocator` | Device location access | Reads location when user uses location features |
-| `geocoding` | Coordinate/address conversion | May call platform geocoding services |
-| `google_maps_flutter` | Embedded maps | Uses Google Maps services for map rendering |
-| `url_launcher` | Open links/apps | Opens external URLs by user action |
-| `scrollable_positioned_list` | UI list utility | No independent data collection |
-| `photo_view` | Zoomable image viewer | No independent data collection |
-| `share_plus` | Share intent integration | Shares selected content by user action |
-| `gal` | Save to gallery/photos | Writes media to user gallery by user action |
-| `shared_preferences` | Local key-value storage | Stores local app preferences |
-| `lucide_icons_flutter` | Icon pack | No independent data collection |
-| `video_player` | Media playback | Local/remote media playback, no SDK telemetry by default |
-| `video_thumbnail` | Generate video thumbnails | Local media processing |
-| `flutter_image_compress` | Image compression | Local media processing |
-| `file_picker` | File chooser | Accesses user-selected files |
-| `permission_handler` | Permission APIs | Requests/checks OS permissions |
-| `docman` | Document management helper | Used for local document operations |
-| `archive` | ZIP create/extract | Local backup archive processing |
-| `uuid` | ID generation | No independent data collection |
-| `google_sign_in` | Google account auth | Processes sign-in identity tokens |
-| `googleapis` | Google APIs client | Used for Google Drive backup operations |
-| `http` | HTTP client | Transport layer for network requests |
-| `flutter_local_notifications` | Local notifications | Schedules/displays local reminders |
-| `timezone` | Timezone handling | Local timezone computation/data |
-| `flutter_timezone` | Read device timezone | Reads device timezone settings |
-| `firebase_core` | Firebase bootstrap | Enables Firebase services used by app |
-| `firebase_auth` | Firebase authentication | Anonymous auth for AI calls; Google auth for backup flow |
-| `firebase_analytics` | Optional analytics | Sends consented usage telemetry |
-| `cloud_functions` | Call backend functions | Sends AI request payloads to Firebase Functions |
-| `speech_to_text` | Speech recognition bridge | Uses platform speech recognition services |
-| `flutter_to_pdf` | Widget-to-PDF export | Local PDF generation |
-| `pdf` | PDF creation/manipulation | Local document generation |
-| `local_auth` | Biometric auth bridge | Uses OS biometric prompt APIs |
-| `flutter_secure_storage` | Secure local storage | Stores sensitive local values in OS secure storage |
-| `crypto` | Cryptographic helpers | Local hashing operations |
-| `purchases_flutter` | RevenueCat SDK | Subscription entitlement and purchase state syncing |
